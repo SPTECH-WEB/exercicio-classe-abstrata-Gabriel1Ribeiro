@@ -26,7 +26,7 @@ public class ImagemFactory {
   }
 
   public static Object build(List<?> figuras) throws ReflectiveOperationException {
-    Object obj = new Imagem();
+    Object obj = new Imagem("1");
     campos().get("figuras").set(obj, figuras);
 
     return obj;
